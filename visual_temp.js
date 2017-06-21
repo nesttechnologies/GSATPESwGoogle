@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <title>GSAPTES_GoogleMaps</title>
-        <style>
-            /* Always set the map height explicitly to define the size of the div
-            * element that contains the map. */
-            #map {
-                height: 80%;
-            }
-            /* Optional: Makes the sample page fill the window. */
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-        </style>
-        <script>
-            /* This is Visualization of Estimated Population data with their condifence level
+ /* This is Visualization of Estimated Population data with their condifence level
                within a circular range.*/
             function initMap(){
                 var map;
@@ -36,44 +16,47 @@
                 var iCols = 4;
                 var i;
                 var j;
-                var a = new Array(iRows);
+                var data_g = new Array(iRows);
                 /* Generate 10000 coordinates and generate random data of population density 
                  * and confidence level for each grid coordinates*/
                 for (i = 0; i < iRows; i++) {
-                    a[i] = new Array(iCols);
+                    ////////test
+                    var b = new Array(iCols);
+                    data_g[i] = b;
+                    ///////////
                     if(i%100 > 0){
                         for (j = 0; j < iCols; j++) {                    
                             if(j===0)
                             {
-                                a[i][0] = a[i-1][0] + 0.00002;
+                                data_g[i][0] = data_g[i-1][0] + 0.00002;
                             }else if(j===1)
                             {
-                                a[i][1] = a[i-1][1] + 0.001152;                 
+                                data_g[i][1] = data_g[i-1][1] + 0.001152;                 
                             } else if(j===2){
-                                a[i][2] = Math.floor(Math.random()*1000); 
+                                data_g[i][2] = Math.floor(Math.random()*1000); 
                             } else if(j===3){
-                                a[i][3] = Math.floor(Math.random()*100); 
+                                data_g[i][3] = Math.floor(Math.random()*100); 
                             }
                         }}else {
                         for (j = 0; j < iCols; j++) {
                             if(i===0 && j===0){
-                                a[i][j] = ilat-((0.00002*50)+(0.00090*50));
+                                data_g[i][j] = ilat-((0.00002*50)+(0.00090*50));
                             }else if(i===0 && j===1)
                             {
-                                a[i][j] = ilong-((0.001152*50)+(0.000026*50));  
-                                a[i][2] = Math.floor(Math.random()*1000);
-                                a[i][3] = Math.floor(Math.random()*100);
+                                data_g[i][j] = ilong-((0.001152*50)+(0.000026*50));  
+                                data_g[i][2] = Math.floor(Math.random()*1000);
+                                data_g[i][3] = Math.floor(Math.random()*100);
                             }else{
                                 if(j===0)
                                 {
-                                    a[i][0] = a[i-100][0] + 0.0009;
+                                    data_g[i][0] = data_g[i-100][0] + 0.0009;
                                 }else if(j===1)
                                 {
-                                    a[i][1] = a[i-100][1] + 0.000026;
+                                    data_g[i][1] = data_g[i-100][1] + 0.000026;
                                 } else if(j===2){ 
-                                    a[i][2] = Math.floor(Math.random()*1000); 
+                                    data_g[i][2] = Math.floor(Math.random()*1000); 
                                 } else if(j===3){
-                                    a[i][3] = Math.floor(Math.random()*100); 
+                                    data_g[i][3] = Math.floor(Math.random()*100); 
                                 }
                             }
                         }
@@ -102,33 +85,33 @@
                         }
                         else{ 
                             var squareCoords = [
-                                {lat: a[i][0], lng: a[i][1]},
-                                {lat: a[i+100][0], lng: a[i+100][1]},
-                                {lat: a[i+101][0], lng: a[i+101][1]},
-                                {lat: a[i+1][0], lng: a[i+1][1]}
+                                {lat: data_g[i][0], lng: data_g[i][1]},
+                                {lat: data_g[i+100][0], lng: data_g[i+100][1]},
+                                {lat: data_g[i+101][0], lng: data_g[i+101][1]},
+                                {lat: data_g[i+1][0], lng: data_g[i+1][1]}
                             ];
                             var color;
                             var opacity;
-                            if(a[i][2]>1 && a[i][2]<10){
+                            if(data_g[i][2]>1 && data_g[i][2]<10){
                                 color = '#00FF00';
                             } 
-                            else if(a[i][2]>10 && a[i][2]<100)
+                            else if(data_g[i][2]>10 && data_g[i][2]<100)
                             {
                                 color = '#FFFF00';
-                            } else if(a[i][2]>100 && a[i][2]<1000){
+                            } else if(data_g[i][2]>100 && data_g[i][2]<1000){
                                 color = '#FF7F00';
                             } else {
                                 color = '#FF0000';
                             }
-                            if(a[i][3]>0 && a[i][3]<25)
+                            if(data_g[i][3]>0 && data_g[i][3]<25)
                             {
                                 opacity = 0.2;
                             }
-                            else if(a[i][3]>25 && a[i][3]<50)
+                            else if(data_g[i][3]>25 && data_g[i][3]<50)
                             {
                                 opacity = 0.3;
                             } 
-                            else if(a[i][3]>50 && a[i][3]<75)
+                            else if(data_g[i][3]>50 && data_g[i][3]<75)
                             {
                                 opacity: 0.4;
                             }
@@ -175,18 +158,3 @@
         infoWindow.setPosition(event.latLng);
         infoWindow.open(map);
     }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDez9QM8wA8oYplC0ysprFborf_q1ARjb8&libraries=geometry"
-        async defer></script>
-    </head>
-    <body>
-        <form name="userInput">
-            Latitude:<input type=number value="38.5" id="lat" autofocus /><br>
-            Longitude:  <input type=number value="-77.5" id="long" /><br>
-            Radius: <input type=number value="500" id="rad" /> <br>
-            DateTime: <input type=text value="03/06/2017 15:00:00ET" id="date" /> <br> 
-            <input type="button" id="submit" value="Submit" onclick="initMap();"/> <br>
-        </form>
-        <div id="map"></div>
-    </body>
-</html>
