@@ -1,12 +1,35 @@
 /* This is Visualization of Estimated Population data with their condifence level
                within a circular range.*/
-            function initMap(){
+function showArrays(event) 
+    {
+        /* Since this polygon has only one path, we can call getPath() to return the
+         *          MVCArray of LatLngs.*/
+        var vertices = this.getPath();
+        var contentString = "<b>UTM Square polygon</b><br>" + 
+                "Clicked location: <br>" + event.latLng.lat() + "," + event.latLng.lng() +
+                "<br>";
+        // Iterate over the vertices.
+        for (var i =0; i < vertices.getLength(); i++) 
+        {
+            var xy = vertices.getAt(i);
+            contentString += "<br>" + "Coordinate " + i + ":<br>" + xy.lat() + "," + xy.lng();
+        }
+        // Replace the info window's content and position.
+        //infoWindow.setContent(contentString);
+        //infoWindow.setPosition(event.latLng);
+        //infoWindow.open(map);
+    }
+	function initMap(){
+		//implement the Array.insert method
+		Array.prototype.insert = function ( index, item ) {
+		this.splice( index, 0, item );
+		};
                 var map;
-                var infoWindow;
+                //var infoWindow;
                 var irad=Number(document.getElementById("rad").value);
                 var ilong=Number(document.getElementById("long").value);
                 var ilat=Number(document.getElementById("lat").value);
-                map = new google.maps.Map(document.getElementById('map'), {
+                map = new google.maps.Map(document.getElementById("map"), {
                     zoom: 15,
                     center: {lat: ilat, lng: ilong},
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -14,111 +37,138 @@
                 });
                 var iRows = 10000;
                 var iCols = 4;
+                var Firsti;
                 var i;
                 var j;
-                var a = new Array(iRows);
+                var temp;
+                var dataG;
                 /* Generate 10000 coordinates and generate random data of population density 
                  * and confidence level for each grid coordinates*/
-                for (i = 0; i < iRows; i++) {
-                    a[i] = new Array(iCols);
-                    if(i%100 > 0){
-                        for (j = 0; j < iCols; j++) {                    
-                            if(j===0)
-                            {
-                                a[i][0] = a[i-1][0] + 0.00002;
-                            }else if(j===1)
-                            {
-                                a[i][1] = a[i-1][1] + 0.001152;                 
-                            } else if(j===2){
-                                a[i][2] = Math.floor(Math.random()*1000); 
-                            } else if(j===3){
-                                a[i][3] = Math.floor(Math.random()*100); 
-                            }
-                        }}else {
+                dataG =new Array();
+                for (i = 0; i  < iRows; i ++) {
+                  //test-arr.insert(index, item)
+                  
+                    var tempArray = new Array(iCols);
+                    dataG.insert(i,tempArray);
+                    //dataG[i] = tempArray;
+                  //
+                   temp = i;
+			var element = dataG[temp];
+                    if(temp%100 > 0){
+                        for (j = 0; j < iCols; j++) {    
+				
+                            switch(j){
+                                case 0:
+                                    element.insert(0,dataG[temp-1][0] + 0.00002);
+                                    break;
+                                case 1:
+                                    element.insert(1,dataG[temp-1][1] + 0.001152);
+                                    break;
+                                case 2:
+                                     element.insert(2,Math.floor(Math.random()*1000));
+                                    break;
+                                case 3:
+                                    element.insert(3,Math.floor(Math.random()*100));
+                                    break;
+                             }                            
+                        }
+                    }
+                     else {
                         for (j = 0; j < iCols; j++) {
-                            if(i===0 && j===0){
-                                a[i][j] = ilat-((0.00002*50)+(0.00090*50));
-                            }else if(i===0 && j===1)
+                            if(temp===0 && j===0){
+                                element.insert(j,ilat-((0.00002*50)+(0.00090*50)));
+                                //dataG[temp][j] = ilat-((0.00002*50)+(0.00090*50));
+                            }
+                            else if(temp===0 && j===1)
                             {
-                                a[i][j] = ilong-((0.001152*50)+(0.000026*50));  
-                                a[i][2] = Math.floor(Math.random()*1000);
-                                a[i][3] = Math.floor(Math.random()*100);
-                            }else{
-                                if(j===0)
-                                {
-                                    a[i][0] = a[i-100][0] + 0.0009;
-                                }else if(j===1)
-                                {
-                                    a[i][1] = a[i-100][1] + 0.000026;
-                                } else if(j===2){ 
-                                    a[i][2] = Math.floor(Math.random()*1000); 
-                                } else if(j===3){
-                                    a[i][3] = Math.floor(Math.random()*100); 
-                                }
+                                element.insert(j,ilong-((0.001152*50)+(0.000026*50)));
+                                //dataG[temp][j] = ilong-((0.001152*50)+(0.000026*50));  
+                                element.insert(2,Math.floor(Math.random()*1000));
+                                //dataG[temp][2] = Math.floor(Math.random()*1000);
+                                element.insert(3,Math.floor(Math.random()*100));
+                                //dataG[temp][3] = Math.floor(Math.random()*100);
+                            }
+                            else{
+                                
+                                switch(j){
+                                case 0:
+                                    element.insert(0,dataG[temp-100][0] + 0.0009);
+                                    break;
+                                case 1:
+                                     element.insert(1,dataG[temp-100][1] + 0.000026);
+                                    break;
+                                case 2:
+                                     element.insert(2,Math.floor(Math.random()*1000));
+                                    break;
+                                case 3:
+                                    element.insert(3,Math.floor(Math.random()*100));
+                                    break;
+                                 }           
                             }
                         }
                     }
                 }
                 // Define the circular range.        
                 var Circle = new google.maps.Circle({
-                    strokeColor: '#0000FF',
+                    strokeColor: "#0000FF",
                     strokeOpacity: 0.8,
                     strokeWeight: 2,
-                    fillColor: '#0000FF',
+                    fillColor: "#0000FF",
                     fillOpacity: 0.0,
-                    map: map,
+                    map,
                     center: {lat: ilat, lng: ilong},
                     radius: irad
                 });
                 Circle.setMap(map); 
                 // Construct the UTM Squares.
-                for(var i = 0;i < 10000;i++)
+                for(i = 0;i < 10000;i++)
                 { 
-                    var coord1 = new google.maps.LatLng(a[i][0]+(0.00090/2), a[i][1]+(0.001152/2));
-                    if(Circle.getBounds().contains(coord1))
+                    var coord1 = new google.maps.LatLng(dataG[i][0]+(0.00090/2), dataG[i][1]+(0.001152/2));
+                    if(Circle.getBounds().contains(coord1) && google.maps.geometry.spherical.computeDistanceBetween(Circle.getCenter(), coord1) <= Circle.getRadius())
                     {
-                        if(i%100 === 99)
-                        {
-                        }
-                        else{ 
+                        if(i%100 !== 99){
+                        
                             var squareCoords = [
-                                {lat: a[i][0], lng: a[i][1]},
-                                {lat: a[i+100][0], lng: a[i+100][1]},
-                                {lat: a[i+101][0], lng: a[i+101][1]},
-                                {lat: a[i+1][0], lng: a[i+1][1]}
+                                {lat: dataG[i][0], lng: dataG[i][1]},
+                                {lat: dataG[i+100][0], lng: dataG[i+100][1]},
+                                {lat: dataG[i+101][0], lng: dataG[i+101][1]},
+                                {lat: dataG[i+1][0], lng: dataG[i+1][1]}
                             ];
                             var color;
                             var opacity;
-                            if(a[i][2]>1 && a[i][2]<10){
-                                color = '#00FF00';
-                            } 
-                            else if(a[i][2]>10 && a[i][2]<100)
-                            {
-                                color = '#FFFF00';
-                            } else if(a[i][2]>100 && a[i][2]<1000){
-                                color = '#FF7F00';
-                            } else {
-                                color = '#FF0000';
+                            var popColor = dataG[i][2];
+                            switch (true){
+                                   case(popColor >1 && popColor<250):
+                                        color = "#00FF00";
+                                        break;
+                                   case(popColor >250 && popColor<500):
+                                        color = "#FFFF00";
+                                        break;
+                                   case(popColor >500 && popColor<750):
+                                        color = "#FF7F00";
+                                        break;
+                                   case(popColor >750):
+                                        color = "#FF0000";
+                                        break;
                             }
-                            if(a[i][3]>0 && a[i][3]<25)
-                            {
-                                opacity = 0.2;
-                            }
-                            else if(a[i][3]>25 && a[i][3]<50)
-                            {
-                                opacity = 0.3;
-                            } 
-                            else if(a[i][3]>50 && a[i][3]<75)
-                            {
-                                opacity: 0.4;
-                            }
-                            else
-                            {
-                                opacity: 0.5;
+                            var popConf = dataG[i][3];
+                            switch (true){
+                                   case(popConf >0 && popConf<25):
+                                         opacity = 0.25;
+                                        break;
+                                   case(popConf >25 && popConf<50):
+                                         opacity = 0.5;
+                                        break;
+                                   case(popConf >50 && popConf<75):
+                                         opacity = 0.75;
+                                        break;
+                                   case(popConf >75):
+                                         opacity = 0.9;
+                                        break;
                             }
                             var UTMsquare = new google.maps.Polygon({
                                 paths: squareCoords,
-                                strokeColor: '#FFFFFF',
+                                strokeColor: "#FFFFFF",
                                 strokeOpacity: 0.2,
                                 strokeWeight: 1,
                                 fillColor: color,
@@ -126,32 +176,10 @@
                             });
                             UTMsquare.setMap(map);
                             // Add a listener for the click event.
-                            UTMsquare.addListener('click', showArrays);
+                            UTMsquare.addListener("click", showArrays);
                             infoWindow = new google.maps.InfoWindow;
                             
                 }
             }
-            else
-            {
-            }
         }
-    }
-    function showArrays(event) 
-    {
-        /* Since this polygon has only one path, we can call getPath() to return the
-         *          MVCArray of LatLngs.*/
-        var vertices = this.getPath();
-        var contentString = '<b>UTM Square polygon</b><br>' + 
-                'Clicked location: <br>' + event.latLng.lat() + ',' + event.latLng.lng() +
-                '<br>';
-        // Iterate over the vertices.
-        for (var i =0; i < vertices.getLength(); i++) 
-        {
-            var xy = vertices.getAt(i);
-            contentString += '<br>' + 'Coordinate ' + i + ':<br>' + xy.lat() + ',' + xy.lng();
-        }
-        // Replace the info window's content and position.
-        infoWindow.setContent(contentString);
-        infoWindow.setPosition(event.latLng);
-        infoWindow.open(map);
     }
