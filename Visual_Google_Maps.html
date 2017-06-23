@@ -20,25 +20,44 @@
         <script>
             /* This is Visualization of Estimated Population data with their condifence level
                within a circular range.*/
+    var infi; 
 var RadVal =function(event){
+        var inputVal = document.getElementById("rad");
         if(event.target.value >= 100 && event.target.value <= 5000)
-        {$("#submit").show();}
+        {
+            inputVal.style.backgroundColor = "";
+
+            $("#submit").show();}
         else 
-        {$("#submit").hide();}
+        {            
+            inputVal.style.backgroundColor = "#ff9999";         
+            $("#submit").hide();
+        
+    }
     };
 
     var LatVal =function(event){
+        var inputVal = document.getElementById("lat");
         if(event.target.value >= -90 && event.target.value <= 90)
-        {$("#submit").show();}
+        {        
+            inputVal.style.backgroundColor = "";
+            $("#submit").show();}
         else 
-        {$("#submit").hide();}
+        {
+            inputVal.style.backgroundColor = "#ff9999";
+            $("#submit").hide();}
     };
 
     var LongVal =function(event){
+        var inputVal = document.getElementById("long");
         if(event.target.value >= -180 && event.target.value <= 180)
-        {$("#submit").show();}
+        {
+            inputVal.style.backgroundColor = "";
+            $("#submit").show();}
         else 
-        {$("#submit").hide();}
+        {
+            inputVal.style.backgroundColor = "#ff9999";
+            $("#submit").hide();}
     };
 function showArrays(event) 
     {
