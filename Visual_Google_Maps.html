@@ -23,7 +23,7 @@
     var infi; 
 var RadVal =function(event){
         var inputVal = document.getElementById("rad");
-        if(event.target.value >= 100 && event.target.value <= 5000)
+        if(event.target.value >= 100 && event.target.value <= 10000)
         {
             inputVal.style.backgroundColor = "";
 
@@ -89,7 +89,7 @@ function showArrays(event)
                 var ilong=Number(document.getElementById("long").value);
                 var ilat=Number(document.getElementById("lat").value);
                 map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 15,
+                    zoom: 13,
                     center: {lat: ilat, lng: ilong},
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
                     scaleControl: true
@@ -202,13 +202,13 @@ function showArrays(event)
                             var opacity;
                             var popColor = dataG[i][2];
                             switch (true){
-                                   case(popColor >1 && popColor<250):
+                                   case(popColor >1 && popColor<50):
                                         color = "#00FF00";
                                         break;
-                                   case(popColor >250 && popColor<500):
+                                   case(popColor >50 && popColor<100):
                                         color = "#FFFF00";
                                         break;
-                                   case(popColor >500 && popColor<750):
+                                   case(popColor >100 && popColor<750):
                                         color = "#FF7F00";
                                         break;
                                    case(popColor >750):
@@ -224,10 +224,10 @@ function showArrays(event)
                                          opacity = 0.4;
                                         break;
                                    case(popConf >50 && popConf<75):
-                                         opacity = 0.65;
+                                         opacity = 0.55;
                                         break;
                                    case(popConf >75):
-                                         opacity = 0.8;
+                                         opacity = 0.75;
                                         break;
                             }
                             var UTMsquare = new google.maps.Polygon({
@@ -256,9 +256,9 @@ function showArrays(event)
     </head>
     <body>
         <form name="userInput">
-            Latitude:<input type=text onchange="LatVal(event)"  id="lat" autofocus /><br>
-            Longitude:  <input type=number onchange="LongVal(event)" value="-77.5" id="long" /><br>
-            Radius: <input type=number onchange="RadVal(event)" value="500" id="rad" /> <br>
+            Latitude:<input type=text onchange="LatVal(event)" value="28.5383" id="lat" autofocus /><br>
+            Longitude:  <input type=number onchange="LongVal(event)" value="-81.3792" id="long" /><br>
+            Radius: <input type=number onchange="RadVal(event)" value="5000" id="rad" /> <br>
             Date: <input type=date value="" id="date" /> <br>
             Time: <select name="Zone"> 
     <option value="Eastern TimeT">Eastern Time</option>
