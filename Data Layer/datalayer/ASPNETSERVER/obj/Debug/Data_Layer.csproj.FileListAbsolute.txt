@@ -1,0 +1,98 @@
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ApplicationInsights.config
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\csc.exe
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\vbc.exe
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ASPNETSERVER.dll.config
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ASPNETSERVER.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ASPNETSERVER.pdb
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\GeoAPI.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.Web.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ProjNet.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Helpers.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Mvc.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Razor.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Razor.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.Web.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\ProjNet.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Razor.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Razor.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Helpers.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\bin\System.Web.Mvc.xml
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\obj\Debug\Data_Layer.csprojResolveAssemblyReference.cache
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\obj\Debug\ASPNETSERVER.dll
+C:\Users\Dariia\Documents\Visual Studio 2015\Projects\Python\datalayer\ASPNETSERVER\obj\Debug\ASPNETSERVER.pdb
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ApplicationInsights.config
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\csc.exe
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\vbc.exe
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\VBCSCompiler.exe
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ASPNETSERVER.dll.config
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ASPNETSERVER.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ASPNETSERVER.pdb
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\GeoAPI.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.Web.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ProjNet.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Helpers.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Mvc.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Razor.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Razor.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.Web.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\ProjNet.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Razor.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Webpages.Razor.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Helpers.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\bin\System.Web.Mvc.xml
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\obj\Debug\Data_Layer.csprojResolveAssemblyReference.cache
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\obj\Debug\ASPNETSERVER.dll
+C:\Users\Office\Desktop\Visualization Project\datalayer\datalayer\ASPNETSERVER\obj\Debug\ASPNETSERVER.pdb
