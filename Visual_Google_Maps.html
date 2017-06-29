@@ -79,6 +79,16 @@ function showArrays(event)
         //infoWindow.open(map);
     }
 	function initMap(){
+            var lat = document.getElementById("lat").value;
+               var longt = document.getElementById("long").value;
+               //http://localhost:55340/Home/GetLatLongToUTM?lat=-55&longt=-89
+               var apiUrl = 'http://localhost:57597/Home/GetLatLongToUTM?'
+                   $.get(apiUrl+'lat='+lat+'&longt='+longt)
+        .done(function (data) {
+            
+            // On success, 'data' contains a list of products.
+           debugger;
+        });
 		//implement the Array.insert method
 		Array.prototype.insert = function ( index, item ) {
 		this.splice( index, 0, item );
@@ -185,7 +195,7 @@ function showArrays(event)
                         );
                 Circle.setMap(map); 
                 // Construct the UTM Squares.
-                for(i = 0;i < 10000;i++)
+                for(i = 0;i < 9900;i++)
                 { 
                     var coord1 = new google.maps.LatLng(dataG[i][0]+(0.00090/2), dataG[i][1]+(0.001152/2));
                     if(Circle.getBounds().contains(coord1) && google.maps.geometry.spherical.computeDistanceBetween(Circle.getCenter(), coord1) <= Circle.getRadius())
@@ -306,7 +316,7 @@ function showArrays(event)
     <option value="55">55</option>
             </select> min
             <br>
-            <input type="button" id="submit" value="Submit" onclick="initMap();"/> <br>
+            <input type="button" id="submit" value="Submit" onclick="initMap()"/> <br>
         </form>
         <div id="map"></div>
     </body>
